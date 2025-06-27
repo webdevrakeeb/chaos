@@ -1,0 +1,529 @@
+/*==================================
+Medium Screen - Others
+====================================*/
+@media screen and (min-width: 1400px) and (max-width: 1599px) {
+    .hero-area {
+        overflow: hidden;
+    }
+    .hero-wrpper {
+        top: 16%;
+        left: 132px;
+    }
+    .hero-logo-card img {
+        max-width: 450px;
+    }
+
+    .video-recent-event-area {
+        top: 79.5%;
+    }
+
+    .werver-raking-thumb {
+        left: -115px;
+    }
+}
+/*==================================
+Medium Screen - Others
+====================================*/
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .hero-wrpper {
+        top: 16%;
+        left: 132px;
+    }
+    .hero-logo-card img {
+        max-width: 450px;
+    }
+
+    .hero-area {
+        overflow: hidden;
+    }
+    .hero-wrpper {
+        top: 23%;
+        left: 162px;
+    }
+    .hero-logo-card img {
+        max-width: 350px;
+    }
+
+    .video-recent-event-area {
+        top: 77.5%;
+    }
+
+    .werver-raking-thumb {
+        left: -80px;
+    }
+
+    .bradcome-area {
+        padding: 90px 0;
+    }
+    .bradcome-wrpper span::before {
+        width: 360px;
+    }
+    .bradcome-wrpper span::after {
+        width: 355px;
+    }
+
+    .row-title-card span::before {
+        width: 370px;
+    }
+    .row-title-card span::after {
+        width: 365px;
+    }
+}
+
+/*==================================
+Medium Screen - Others
+====================================*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .header-menu-list li a {
+        padding-left: 15px;
+        padding-right: 18px;
+    }
+
+    .hero-area {
+        overflow: hidden;
+    }
+    .hero-wrpper {
+        top: 29%;
+        left: 120px;
+    }
+    .hero-logo-card img {
+        max-width: 280px;
+    }
+
+    .server-ranking-wrpper {
+        padding-top: 40px;
+    }
+
+    .server-ranking-wrpper .container .row {
+        padding-bottom: 30px;
+    }
+    .werver-raking-thumb img {
+        width: 80%;
+    }
+    .werver-raking-thumb {
+        left: -40px;
+    }
+    .show-all-btn {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    .tabs {
+        column-gap: 25px;
+    }
+
+    .info-header-card {
+        margin-left: 15px;
+    }
+
+    .single-content-item {
+        padding-left: 15px;
+    }
+
+    .ranking-table {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .statistics-event-area {
+        padding-top: 70px;
+        padding-bottom: 65px;
+    }
+
+    .footer-menu-wrpper {
+        padding-bottom: 80px;
+    }
+
+    .bradcome-area {
+        padding: 80px 0;
+    }
+    .bradcome-wrpper span {
+        font-size: 30px;
+    }
+    .bradcome-wrpper span::before {
+        width: 300px;
+    }
+    .bradcome-wrpper span::after {
+        width: 290px;
+    }
+
+    .row-title-card span::before {
+        width: 285px;
+        height: 17px;
+    }
+    .row-title-card span::after {
+        width: 279px;
+        height: 17px;
+    }
+    .cnt-card {
+        padding: 0 30px;
+        padding-top: 10px;
+    }
+    .update-post-row {
+        padding-top: 50px;
+    }
+}
+
+/*==================================
+Small Screen - Tablate
+====================================*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .header-area .container > .row {
+        row-gap: 15px;
+    }
+    .header-menu-list li a {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-area {
+        overflow: hidden;
+    }
+    .hero-wrpper {
+        top: 20%;
+        left: 70px;
+    }
+    .hero-logo-card img {
+        max-width: 230px;
+    }
+
+    .video-recent-event-area {
+        position: initial;
+        padding-top: 50px;
+    }
+
+    .recent-event-wrpper .row {
+        row-gap: 30px;
+    }
+
+    .discord-card.single-banner-card img {
+        width: 100%;
+    }
+    .banner-single-icon-card {
+        width: 150px;
+    }
+    .facebook-card .facebook-icon {
+        width: 60px;
+    }
+
+    .single-banner-cnt-card.facebook-card {
+        column-gap: 40px;
+    }
+
+    .banner-wrpper {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .banner-wrpper .row {
+        row-gap: 30px;
+    }
+
+    .server-ranking-area {
+        padding-top: 20px;
+    }
+
+    .server-ranking-wrpper {
+        padding-top: 40px;
+    }
+    .werver-raking-thumb {
+        position: initial;
+    }
+
+    .statistics-event-area {
+        padding-top: 55px;
+        padding-bottom: 40px;
+    }
+
+    .statictics-event-wrpper .row {
+        row-gap: 30px;
+    }
+
+    .owl-stage {
+        padding: 0;
+    }
+
+    .footer-menu-wrpper {
+        padding-bottom: 50px;
+    }
+
+    .bradcome-area {
+        padding: 60px 0;
+    }
+    .bradcome-wrpper span {
+        font-size: 25px;
+    }
+    .bradcome-wrpper span::before {
+        width: 200px;
+    }
+    .bradcome-wrpper span::after {
+        width: 190px;
+    }
+    .file-size-row .row {
+        row-gap: 20px;
+    }
+
+    .row-title-card span::before {
+        width: 240px;
+        height: 17px;
+        left: -35px;
+    }
+    .row-title-card span::after {
+        width: 250px;
+        height: 17px;
+        right: -45px;
+    }
+    .update-post-row {
+        padding-top: 30px;
+    }
+    .cnt-card {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .row.drivers-row {
+        row-gap: 15px;
+    }
+    .all-section-cnt-card {
+        padding-bottom: 40px;
+    }
+    .second-page-fma {
+        padding-top: 55px;
+    }
+    .update-post-row .row {
+        row-gap: 18px;
+    }
+}
+
+/*==================================
+Xtra Small Screen - Small Mobile
+====================================*/
+@media screen and (max-width: 767px) {
+    .header-area {
+        padding: 10px 0;
+    }
+
+    .hero-area {
+        overflow: hidden;
+    }
+    .hero-wrpper {
+        top: 15%;
+        left: 10px;
+    }
+    .hero-logo-card img {
+        max-width: 130px;
+    }
+
+    .video-recent-event-area {
+        position: initial;
+        padding-top: 0px;
+    }
+
+    .recent-event-wrpper .row {
+        row-gap: 15px;
+    }
+
+    .discord-card.single-banner-card img {
+        width: 100%;
+    }
+    .banner-single-icon-card {
+        width: 55px;
+    }
+    .facebook-card .facebook-icon {
+        width: 30px;
+    }
+
+    .single-banner-cnt-card.facebook-card {
+        column-gap: 20px;
+    }
+
+    .banner-wrpper {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .banner-wrpper .row {
+        row-gap: 15px;
+    }
+
+    .server-ranking-area {
+        padding-top: 20px;
+    }
+
+    .server-ranking-wrpper {
+        padding-top: 40px;
+    }
+    .werver-raking-thumb {
+        position: initial;
+    }
+
+    .info-header-card {
+        margin-left: 10px;
+    }
+
+    .tabs {
+        column-gap: 18px;
+    }
+
+    .single-content-item {
+        padding-left: 10px;
+    }
+    .banner-single-cnt-card h3 {
+        font-size: 20px;
+    }
+
+    .show-all-btn {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .video-card {
+        min-height: 300px;
+    }
+
+    .bottom-titles h3,
+    .bottom-titles h2 {
+        font-size: 18px;
+    }
+
+    .top-heading {
+        top: 8px;
+        right: 10px;
+    }
+    .bottom-titles {
+        left: 10px;
+        bottom: 8px;
+    }
+    .info-header-left-card p {
+        font-size: 13px;
+    }
+
+    .statistics-event-area {
+        padding-top: 55px;
+        padding-bottom: 40px;
+    }
+    .statictics-event-wrpper .row {
+        row-gap: 15px;
+    }
+    .statistics-list,
+    .new-event-single-row {
+        padding-left: 15px;
+    }
+
+    .server-media-slider {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .owl-stage {
+        padding: 0;
+    }
+
+    .owl-prev,
+    .owl-next {
+        position: initial;
+        display: inline;
+        transform: translateY(0);
+    }
+    .owl-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+        padding-top: 15px;
+    }
+
+    .footer-menu-wrpper {
+        padding-bottom: 30px;
+    }
+    .footer-menu-list {
+        row-gap: 15px;
+    }
+    .footer-menu-item {
+        width: 50%;
+    }
+    .footer-copy-right .row {
+        row-gap: 15px;
+    }
+
+    .all-sections-header-card {
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .bradcome-area {
+        padding: 40px 0;
+    }
+    .bradcome-wrpper span {
+        font-size: 25px;
+    }
+    .bradcome-wrpper span::before {
+        width: 223px;
+        top: -10px;
+        left: 30px;
+    }
+    .bradcome-wrpper span::after {
+        width: 229px;
+        top: 111%;
+        right: 27px;
+    }
+
+    .left-section-title-card,
+    .left-section-tab-card {
+        width: 100%;
+    }
+    .second-page-tab {
+        justify-content: space-evenly;
+    }
+    .all-section-cnt-card {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .file-size-row .row {
+        margin-top: 10px;
+        row-gap: 15px;
+    }
+
+    .row-title-card span::before {
+        width: 210px;
+        height: 17px;
+        left: 7px;
+        top: -16px;
+        transform: translateY(0);
+    }
+    .row-title-card span::after {
+        width: 218px;
+        height: 17px;
+        right: 0;
+        top: 100%;
+        transform: translateY(0);
+    }
+    .update-post-row {
+        padding-top: 35px;
+        padding-bottom: 10px;
+    }
+    .single-post-card p {
+        margin-bottom: 5px;
+    }
+    .cnt-card {
+        padding: 10px;
+        padding-bottom: 24px;
+    }
+    .update-post-row .row {
+        row-gap: 18px;
+    }
+
+    .all-section-cnt-card {
+        padding-bottom: 30px;
+    }
+    .second-page-fma {
+        padding-top: 40px;
+    }
+    .popup-cnt-card {
+        width: calc(100% - 50px);
+        padding-right: 10px;
+    }
+    .requeiment-row {
+        padding-top: 20px;
+    }
+}

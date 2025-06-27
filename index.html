@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- Meta setup -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="">
+        <meta name="decription" content="">
+
+        <!-- Title -->
+        <title>Title Here</title>
+
+        <!-- Fav Icon -->
+        <link rel="icon" href="images/favicon.ico">
+
+        <!-- Include Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <!-- link font awesome -->
+        <link rel="stylesheet" href="css/font-awesome.css">
+
+        <!-- Animation CSS -->
+        <link rel="stylesheet" href="css/animate.css">
+
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+        <!-- Main StyleSheet -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        <!-- HEADER AREA START -->
+        <header class="header-area">
+            <div class="container">
+                <div class="row align-items-center justify-content-md-between">
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="logo-card">
+                            <a href="index.html">
+                                <img src="images/chaos.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-12 col-lg-8 order-md-3 order-lg-2">
+                        <!-- LARGE SCREEN MENU -->
+                        <div class="header-menu-card d-none d-md-flex">
+                            <ul class="header-menu-list">
+                                <li id="header-menu-active">
+                                    <a href="#">home</a>
+                                </li>
+                                <li>
+                                    <img src="images/menu-before.png" alt="">
+                                    <a href="#">forum</a>
+                                </li>
+                                <li>
+                                    <img src="images/menu-before.png" alt="">
+                                    <a href="#">comunity</a>
+                                </li>
+                                <li>
+                                    <img src="images/menu-before.png" alt="">
+                                    <a href="#">support</a>
+                                </li>
+                                <li>
+                                    <img src="images/menu-before.png" alt="">
+                                    <a href="#">raport</a>
+                                </li>
+                            </ul>
+                            <select class="select-options">
+                                <option value="Polish">Polish</option>
+                                <option value="Turkish">Turkish</option>
+                                <option value="English">English</option>
+                            </select>
+                        </div>
+                        <!-- SMALL SCREEN MENU TOGGLER ICON -->
+                        <div id="humbarger-icon" class="d-md-none" data-bs-toggle="offcanvas" data-bs-target="#mobile__menu" aria-controls="offcanvasRight">
+                            <span class="humbarger-line"></span>
+                            <span class="humbarger-line"></span>
+                            <span class="humbarger-line"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2 order-md-2 order-lg-3 d-none d-md-block">
+                        <div class="login-card">
+                            <button data-bs-toggle="modal" data-bs-target="#login__register__popup">
+                                <img src="images/login-btn-bg.png" alt="">
+                                <span>log in</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER AREA END -->
+
+        <!-- LOGIN REGISTER POPUP START -->
+        <div class="modal fade" id="login__register__popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content popup-card">
+                    <div class="popup-title-card">
+                        <img src="images/left-side-title-card-icon.png" alt="">
+                        <p>USER PANEL LOGIN</p>
+                    </div>
+                    <div class="popup-cnt-card">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                <img src="images/menu-before.png" alt="">
+                                <span id="dynamic-text">REGISTER</span>
+                            </h5>
+                            <div class="modal-header-menu">
+                                <div class="tab-container" data-group="group3">
+                                    <div class="tabs">
+                                        <div id="register" class="tab active" onclick="openTab(event, 'tab11', 'group3')">REGISTER</div>
+                                        <div id="login" class="tab" onclick="openTab(event, 'tab12', 'group3')">LOGIN</div>
+                                        <div id="forget" class="tab" onclick="openTab(event, 'tab13', 'group3')">FORGOT?</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body">
+                            <!-- REGISTER FORM -->
+                            <div id="tab11" class="tab-content active" data-group="group3">
+                                <div class="register-form">
+                                    <form id="register-form" action="#" method="POST">
+                                        <!-- Single Row -->
+                                        <div class="single-input-row">
+                                            <label for="">
+                                                <span>01</span> ENTER YOUR USERNAME: </label>
+                                            <div class="input-filed">
+                                                <div class="input-icon-card">
+                                                    <i class="fa-solid fa-user"></i>
+                                                </div>
+                                                <div class="input-tag-card">
+                                                    <input type="text" name="username" id="username" placeholder="Username...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Row -->
+                                        <div class="single-input-row">
+                                            <label for="">
+                                                <span>02</span> ENTER PASSWORD: </label>
+                                            <div class="input-filed">
+                                                <div class="input-icon-card">
+                                                    <i class="fa-solid fa-lock"></i>
+                                                </div>
+                                                <div class="input-tag-card">
+                                                    <input type="password" name="password" id="password" placeholder="Password...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Row -->
+                                        <div class="single-input-row">
+                                            <label for="">
+                                                <span>03</span> ENTER YOUR MAIL: </label>
+                                            <div class="input-filed">
+                                                <div class="input-icon-card">
+                                                    <i class="fa-solid fa-envelope"></i>
+                                                </div>
+                                                <div class="input-tag-card">
+                                                    <input type="email" name="email" id="email" placeholder="Email address...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-bottom-card">
+                                            <div class="confirm-box">
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <p>By creating an account you accept our <a href="#">Terms od Services</a> and <a href="#">Privacy Policy.</a>
+                                                    </p>
+                                                </label>
+                                            </div>
+                                            <div class="register-btn-wrpper">
+                                                <button type="submit" data-bs-dismiss="modal">
+                                                    <img src="images/register-now-btn.png" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="warning-card">
+                                                <li>
+                                                    <img src="images/warning-card-icon.png" alt="">
+                                                    <a href="#">Do you forget password?</a>
+                                                </li>
+                                                <li>
+                                                    <img src="images/warning-card-icon.png" alt="">
+                                                    <span>Already have an account? <a href="#">Log in.</a>
+                                                    </span>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- LogIN Form -->
+                            <div id="tab12" class="tab-content" data-group="group3">
+                                <div class="login-form">
+                                    <form id="register-form" action="#" method="POST">
+                                        <!-- Single Row -->
+                                        <div class="single-input-row">
+                                            <label for="">
+                                                <span>01</span> ENTER YOUR USERNAME: </label>
+                                            <div class="input-filed">
+                                                <div class="input-icon-card">
+                                                    <i class="fa-solid fa-user"></i>
+                                                </div>
+                                                <div class="input-tag-card">
+                                                    <input type="text" name="username" id="username" placeholder="Username...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Row -->
+                                        <div class="single-input-row">
+                                            <label for="">
+                                                <span>02</span> ENTER PASSWORD: </label>
+                                            <div class="input-filed">
+                                                <div class="input-icon-card">
+                                                    <i class="fa-solid fa-lock"></i>
+                                                </div>
+                                                <div class="input-tag-card">
+                                                    <input type="password" name="password" id="password" placeholder="Password...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-bottom-card">
+                                            <div class="confirm-box">
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <p>Remember my details</p>
+                                                </label>
+                                            </div>
+                                            <div class="register-btn-wrpper">
+                                                <button type="submit" data-bs-dismiss="modal">
+                                                    <img src="images/popup-login-btn.png" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="warning-card">
+                                                <li>
+                                                    <img src="images/warning-card-icon.png" alt="">
+                                                    <a href="#">Do you forget password?</a>
+                                                </li>
+                                                <li>
+                                                    <img src="images/warning-card-icon.png" alt="">
+                                                    <span>Already have an account? <a href="#">Log in.</a>
+                                                    </span>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Forget Password -->
+                            <div id="tab13" class="tab-content" data-group="group3">
+                                <div class="forget-password-form">
+                                    <form id="register-form" action="#" method="POST">
+                                        <!-- Single Row -->
+                                        <div class="single-input-row">
+                                            <label for="">
+                                                <span>01</span> ENTER YOUR USERNAME: </label>
+                                            <div class="input-filed">
+                                                <div class="input-icon-card">
+                                                    <i class="fa-solid fa-user"></i>
+                                                </div>
+                                                <div class="input-tag-card">
+                                                    <input type="text" name="username" id="username" placeholder="Username...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-bottom-card">
+                                            <div class="register-btn-wrpper">
+                                                <button type="submit" data-bs-dismiss="modal">
+                                                    <img src="images/popup-login-btn.png" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="warning-card">
+                                                <li>
+                                                    <img src="images/warning-card-icon.png" alt="">
+                                                    <a href="#">Do you forget password?</a>
+                                                </li>
+                                                <li>
+                                                    <img src="images/warning-card-icon.png" alt="">
+                                                    <span>Already have an account? <a href="#">Log in.</a>
+                                                    </span>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LOGIN REGISTER POPUP END -->
+
+        <!-- MOBILE MENU START -->
+        <aside class="offcanvas offcanvas-end" tabindex="-1" id="mobile__menu" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <div id="offcanvasRightLabel">
+                    <a href="index.html">
+                        <img src="images/chaos.png" alt="">
+                    </a>
+                </div>
+                <div class="close-icon" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="images/close-icon.png" alt="">
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="side-menu-card">
+                    <ul class="side-menu-list">
+                        <li>
+                            <img src="images/menu-before.png" alt="">
+                            <a href="#">home</a>
+                        </li>
+                        <li>
+                            <img src="images/menu-before.png" alt="">
+                            <a href="#">forum</a>
+                        </li>
+                        <li>
+                            <img src="images/menu-before.png" alt="">
+                            <a href="#">comunity</a>
+                        </li>
+                        <li>
+                            <img src="images/menu-before.png" alt="">
+                            <a href="#">support</a>
+                        </li>
+                        <li>
+                            <img src="images/menu-before.png" alt="">
+                            <a href="#">raport</a>
+                        </li>
+                    </ul>
+                    <div class="login-card">
+                        <button data-bs-toggle="modal" data-bs-target="#login__register__popup">
+                            <img src="images/login-btn-bg.png" alt="">
+                            <span>log in</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- MOBILE MENU END -->
+
+        <!-- MAIN AREA START -->
+        <main id="main-body">
+            <div class="hero-recent-event-wrpper">
+                <!-- HERO AREA START -->
+                <section class="hero-area">
+                    <img src="images/hero-image.png" alt="">
+                    <div class="hero-wrpper">
+                        <div class="container">
+                            <div class="hero-logo-card">
+                                <img class="wow fadeInLeft" src="images/hero-logo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- HERO AREA END -->
+
+                <!-- VIDEO AND RECENT EVENT START -->
+                <section class="video-recent-event-area">
+                    <div class="container">
+                        <div class="recent-event-wrpper">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="video-card wow fadeInUp">
+                                        <video id="myVideo" poster="images/vedio-poster.png">
+                                            <source src="videos/mov_bbb.mp4">
+                                        </video>
+                                        <button id="playPauseBtn">▶</button>
+                                        <div class="top-heading">
+                                            <p class="wow fadeInRight">2nd Game Stage Started</p>
+                                        </div>
+                                        <div class="bottom-titles">
+                                            <h2 class="wow fadeInUp">01</h2>
+                                            <h3 class="wow fadeInUp">introduction to</h3>
+                                            <p class="wow fadeInUp">Start exploring the rich universe and the incredible stories of the champions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="server-info-card wow fadeInUp">
+                                        <div class="title-img">
+                                            <img src="images/left-side-title-card-icon.png" alt="">
+                                            <p>SERVER INFO</p>
+                                        </div>
+                                        <div class="info-desc-card">
+                                            <div class="info-header-card">
+                                                <div class="info-header-title">
+                                                    <div class="info-header-left-card">
+                                                        <img src="images/menu-before.png" alt="">
+                                                        <p>RECENT NEWS</p>
+                                                    </div>
+                                                    <div class="info-header-right-card">
+                                                        <div class="tab-container" data-group="group1">
+                                                            <div class="tabs">
+                                                                <div class="tab" onclick="openTab(event, 'tab1', 'group1')">all news</div>
+                                                                <div class="tab active" onclick="openTab(event, 'tab2', 'group1')">events</div>
+                                                                <div class="tab" onclick="openTab(event, 'tab3', 'group1')">updates</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="info-list-card">
+                                                <div class="tab-contents">
+                                                    <!-- All News Tab Content -->
+                                                    <div id="tab1" class="tab-content" data-group="group1">
+                                                        <div class="tab-content-list event-tab-cnt-list">
+                                                            <!-- Single Event Item -->
+                                                            <div class="single-content-item">
+                                                                <div class="single-content-inner">
+                                                                    <div class="single-content-left">
+                                                                        <!-- img box -->
+                                                                    </div>
+                                                                    <div class="single-content-right">
+                                                                        <p>
+                                                                            <b>[NEWS]</b> All NEWS dolor est ast our ipsum do ipsum d...
+                                                                        </p>
+                                                                        <p>Posted <span>23.06.2024, 12:00 AM CET</span> by <span>PixartS</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Single Event Item -->
+                                                            <div class="single-content-item">
+                                                                <div class="single-content-inner">
+                                                                    <div class="single-content-left">
+                                                                        <!-- img box -->
+                                                                    </div>
+                                                                    <div class="single-content-right">
+                                                                        <p>
+                                                                            <b>[EVENTS]</b> Lorem ipsum dolor est ast our ipsum do ipsum d...
+                                                                        </p>
+                                                                        <p>Posted <span>23.06.2024, 12:00 AM CET</span> by <span>Martini</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Single Event Item -->
+                                                            <div class="single-content-item">
+                                                                <div class="single-content-inner">
+                                                                    <div class="single-content-left">
+                                                                        <!-- img box -->
+                                                                    </div>
+                                                                    <div class="single-content-right">
+                                                                        <p>
+                                                                            <b>[NEWS]</b> Lorem ipsum dolor est ast our ipsum do ipsum d...
+                                                                        </p>
+                                                                        <p>Posted <span>23.06.2024, 12:00 AM CET</span> by <span>Martini</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Single Event Item -->
+                                                            <div class="single-content-item">
+                                                                <div class="single-content-inner">
+                                                                    <div class="single-content-left">
+                                                                        <!-- img box -->
+                                                                    </div>
+                                                                    <div class="single-content-right">
+                                                                        <p>
+                                                                            <b>[EVENTS]</b> Lorem ipsum dolor est ast our ipsum do ipsum d...
+                                                                        </p>
+                                                                        <p>Posted <span>23.06.2024, 12:00 AM CET</span> by <span>Martini</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Events Items -->
+                                                    <div id="tab2" class="tab-content active" data-group="group1">
+                                                        <div class="tab-content-list event-tab-cnt-list">
+                                                            <!-- Single Event Item -->
+                                                            <div class="single-content-item">
+                                                                <div class="single-content-inner">
+                                                                    <div class="single-content-left">
+                                                                        <!-- img box -->
+                                                                    </div>
+                                                                    <div class="single-content-right">
+                                                                        <p>
+                                                                            <b>[NEWS]</b> Lorem ipsum dolor est ast our ipsum do ipsum d...
+                                                                        </p>
+                                                                        <p>Posted <span>23.06.2024, 12:00 AM CET</span> by <span>PixartS</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Single Event Item -->
+                                                            <div class="single-content-item">
+                                                                <div class="single-content-inner">
+                                                                    <div class="single-content-left">
+                                                                        <!-- img box -->
+                                                                    </div>
+                                                                    <div class="single-content-right">
+                                                                        <p>
+                                                                            <b>[EVENTS]</b> Lorem ipsum dolor est ast our ipsum do ipsum d...
+                                                                        </p>
+                                                                        <p>Posted <span>23.06.2024, 12:00 AM CET</span> by <span>Martini</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Single Event Item -->
+                                                            <div class="single-content-item">
+                                                                <div class="single-content-inner">
+                                                                    <div class="single-content-left">
+                                                                        <!-- img box -->
+                                                                    </div>
+                                                                    <div class="single-content-right">
+                                                                        <p>
+                                                                            <b>[NEWS]</b> Lorem ipsum dolor est ast our ipsum do ipsum d...
+                                                                        </p>
+                                                                        <p>Posted <span>23.06.2024, 12:00 AM CET</span> by <span>Martini</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Single Event Item -->
+                                                            <div class="single-content-item">
+                                                                <div class="single-content-inner">
+                                                                    <div class="single-content-left">
+                                                                        <!-- img box -->
+                                                                    </div>
+                                                                    <div class="single-content-right">
+                                                                        <p>
+                                                                            <b>[EVENTS]</b> Lorem ipsum dolor est ast our ipsum do ipsum d...
+                                                                        </p>
+                                                                        <p>Posted <span>23.06.2024, 12:00 AM CET</span> by <span>Martini</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Updates Tab Content -->
+                                                    <div id="tab3" class="tab-content" data-group="group1">
+                                                        <div class="tab-content-list event-tab-cnt-list">
+                                                            <!-- Single Event Item -->
+                                                            <div class="single-content-item">
+                                                                <div class="single-content-inner">
+                                                                    <div class="single-content-left">
+                                                                        <!-- img box -->
+                                                                    </div>
+                                                                    <div class="single-content-right">
+                                                                        <p>
+                                                                            <b>[NEWS]</b> Updates ipsum dolor est ast our ipsum do ipsum d...
+                                                                        </p>
+                                                                        <p>Posted <span>23.06.2024, 12:00 AM CET</span> by <span>PixartS</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Single Event Item -->
+                                                            <div class="single-content-item">
+                                                                <div class="single-content-inner">
+                                                                    <div class="single-content-left">
+                                                                        <!-- img box -->
+                                                                    </div>
+                                                                    <div class="single-content-right">
+                                                                        <p>
+                                                                            <b>[EVENTS]</b> Lorem ipsum dolor est ast our ipsum do ipsum d...
+                                                                        </p>
+                                                                        <p>Posted <span>23.06.2024, 12:00 AM CET</span> by <span>Martini</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Single Event Item -->
+                                                            <div class="single-content-item">
+                                                                <div class="single-content-inner">
+                                                                    <div class="single-content-left">
+                                                                        <!-- img box -->
+                                                                    </div>
+                                                                    <div class="single-content-right">
+                                                                        <p>
+                                                                            <b>[NEWS]</b> Lorem ipsum dolor est ast our ipsum do ipsum d...
+                                                                        </p>
+                                                                        <p>Posted <span>23.06.2024, 12:00 AM CET</span> by <span>Martini</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Single Event Item -->
+                                                            <div class="single-content-item">
+                                                                <div class="single-content-inner">
+                                                                    <div class="single-content-left">
+                                                                        <!-- img box -->
+                                                                    </div>
+                                                                    <div class="single-content-right">
+                                                                        <p>
+                                                                            <b>[EVENTS]</b> Lorem ipsum dolor est ast our ipsum do ipsum d...
+                                                                        </p>
+                                                                        <p>Posted <span>23.06.2024, 12:00 AM CET</span> by <span>Martini</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="banner-wrpper">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <a href="#">
+                                        <div class="discord-card single-banner-card wow fadeInUp">
+                                            <img src="images/discord-bg.png" alt="">
+                                            <div class="discord-cnt single-banner-cnt-card">
+                                                <div class="discord-icon banner-single-icon-card">
+                                                    <img src="images/discord-icon.png" alt="">
+                                                </div>
+                                                <div class="discord-text banner-single-cnt-card">
+                                                    <h3>discord</h3>
+                                                    <p>Discussion Chat for everyone</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="#">
+                                        <div class="discord-card single-banner-card wow fadeInUp">
+                                            <img src="images/presentation-bg.png" alt="">
+                                            <div class="discord-cnt single-banner-cnt-card">
+                                                <div class="discord-icon banner-single-icon-card">
+                                                    <img src="images/presentation-icon.png" alt="">
+                                                </div>
+                                                <div class="presentation-text banner-single-cnt-card">
+                                                    <h3>PRESENTATION</h3>
+                                                    <p>Watch on Metin2Download</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="#">
+                                        <div class="discord-card single-banner-card wow fadeInUp">
+                                            <img src="images/facebook-card.png" alt="">
+                                            <div class="discord-cnt single-banner-cnt-card facebook-card">
+                                                <div class="facebook-icon banner-single-icon-card">
+                                                    <img src="images/facebook-icon.png" alt="">
+                                                </div>
+                                                <div class="presentation-text banner-single-cnt-card">
+                                                    <h3>SERVER FANPAGE</h3>
+                                                    <p>Follow us on Facebook</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- VIDEO AND RECENT EVENT END -->
+
+            </div>
+            <section class="server-ranking-area">
+
+                <!-- <img src="images/server-ranking-bg.png" alt=""> -->
+                <div class="server-ranking-wrpper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="werver-raking-thumb">
+                                <img class="wow fadeInLeft" src="images/server-ranking-person.png" alt="">
+                            </div>
+                            <div class="offset-lg-6 col-lg-6">
+                                <div class="server-info-card server-ranking-card wow fadeInRight">
+                                    <div class="title-img">
+                                        <img src="images/left-side-title-card-icon.png" alt="">
+                                        <p>SERVER RANKING</p>
+                                    </div>
+                                    <div id="ranking-info-card">
+                                        <div class="info-desc-card">
+                                            <div class="info-header-card ranking-header-card">
+                                                <div class="info-header-title">
+                                                    <div class="info-header-left-card">
+                                                        <img src="images/menu-before.png" alt="">
+                                                        <p>SERVER RANKINGS</p>
+                                                    </div>
+                                                    <div class="info-header-right-card">
+                                                        <div class="tab-container" data-group="group2">
+                                                            <div class="tabs">
+                                                                <div class="tab active" onclick="openTab(event, 'tab4', 'group2')">GUILDS</div>
+                                                                <div class="tab" onclick="openTab(event, 'tab5', 'group2')">PLAYERS</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="info-list-card ranking-table">
+                                                <div class="tab-contents">
+                                                    <div id="tab4" class="tab-content active" data-group="group2">
+                                                        <div class="guilds-table">
+                                                            <table>
+                                                                <tr>
+                                                                    <th>Rank</th>
+                                                                    <th>Guilds</th>
+                                                                    <th class="text-end">Store</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>1.</span>
+                                                                        <img src="images/rank-1.png" alt="">
+                                                                    </td>
+                                                                    <td> BestDesigner </td>
+                                                                    <td class="text-end"> 1255 </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>2.</span>
+                                                                        <img src="images/rank-2.png" alt="">
+                                                                    </td>
+                                                                    <td> Kill3RPL_77213 </td>
+                                                                    <td class="text-end"> 1252 </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>3.</span>
+                                                                        <img src="images/rank-3.png" alt="">
+                                                                    </td>
+                                                                    <td> LovePixartsStu.. </td>
+                                                                    <td class="text-end"> 1215 </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>4.</span>
+                                                                        <img src="images/rank-4.png" alt="">
+                                                                    </td>
+                                                                    <td> Kill3RPL_77213.. </td>
+                                                                    <td class="text-end"> 4525 </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>5.</span>
+                                                                        <img src="images/rank-5.png" alt="">
+                                                                    </td>
+                                                                    <td> PPPLC_Netdd.. </td>
+                                                                    <td class="text-end"> 3455 </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tab5" class="tab-content" data-group="group2">
+                                                        <div class="players-table">
+                                                            <table>
+                                                                <tr>
+                                                                    <th>Rank</th>
+                                                                    <th>Nick Name</th>
+                                                                    <th>Levels</th>
+                                                                    <th class="text-end">Reset <sup>GR</sup>
+                                                                    </th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>1</span>
+                                                                    </td>
+                                                                    <td> BestDesigner </td>
+                                                                    <td>
+                                                                        <span>5642</span>
+                                                                    </td>
+                                                                    <td class="text-end"> 125 <sup>56</sup>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>2</span>
+                                                                    </td>
+                                                                    <td> Kill3RPL_77213 </td>
+                                                                    <td>
+                                                                        <span>4587</span>
+                                                                    </td>
+                                                                    <td class="text-end"> 125 <sup>56</sup>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>3</span>
+                                                                    </td>
+                                                                    <td> LovePixartsStu.. </td>
+                                                                    <td>
+                                                                        <span>1265</span>
+                                                                    </td>
+                                                                    <td class="text-end"> 125 <sup>56</sup>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>4</span>
+                                                                    </td>
+                                                                    <td> Kill3RPL_77213.. </td>
+                                                                    <td>
+                                                                        <span>5742</span>
+                                                                    </td>
+                                                                    <td class="text-end"> 125 <sup>56</sup>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>5</span>
+                                                                    </td>
+                                                                    <td> PPPLC_Netdd.. </td>
+                                                                    <td>
+                                                                        <span>7563</span>
+                                                                    </td>
+                                                                    <td class="text-end"> 125 <sup>56</sup>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="show-all-btn text-center">
+                                            <a href="#">
+                                                <img src="images/Show-all-Btn.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STATISTICS AND EVENT AREA START -->
+            <section class="statistics-event-area">
+                <div class="container">
+                    <div class="statictics-event-wrpper">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="server-info-card server-ranking-card wow fadeInLeft">
+                                    <div class="title-img">
+                                        <img src="images/left-side-title-card-icon.png" alt="">
+                                        <p>NEW STATISTICS</p>
+                                    </div>
+                                    <div id="ranking-info-card" class="statistics-full-card">
+                                        <div class="info-desc-card">
+                                            <div class="info-header-card ranking-header-card">
+                                                <div class="info-header-title">
+                                                    <div class="info-header-left-card">
+                                                        <img src="images/menu-before.png" alt="">
+                                                        <p>SERVER STATISTICS</p>
+                                                    </div>
+                                                    <div class="info-header-right-card">
+                                                        <a href="#">see more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="info-list-card statistics-card">
+                                                <ul class="statistics-list">
+                                                    <li>
+                                                        <p>
+                                                            <span>Statistics of</span> Server Name
+                                                        </p>
+                                                    </li>
+                                                    <li class="text-end">
+                                                        <p>
+                                                            <span>Last updates:</span> 23/04/24 15:30
+                                                        </p>
+                                                    </li>
+                                                    <li class="left-li">
+                                                        <img src="images/list-icon.png" alt="">
+                                                        <p>
+                                                            <span>Created Accounts</span>
+                                                        </p>
+                                                    </li>
+                                                    <li class="text-end">
+                                                        <p>5 228</p>
+                                                    </li>
+                                                    <li class="left-li">
+                                                        <img src="images/list-icon.png" alt="">
+                                                        <p>
+                                                            <span>Created Characters</span>
+                                                        </p>
+                                                    </li>
+                                                    <li class="text-end">
+                                                        <p>5 422</p>
+                                                    </li>
+                                                    <li class="left-li">
+                                                        <img src="images/list-icon.png" alt="">
+                                                        <p>
+                                                            <span>Created Guilds</span>
+                                                        </p>
+                                                    </li>
+                                                    <li class="text-end">
+                                                        <p>4 263</p>
+                                                    </li>
+                                                    <li class="left-li">
+                                                        <img src="images/list-icon.png" alt="">
+                                                        <p>
+                                                            <span>Players Online</span>
+                                                        </p>
+                                                    </li>
+                                                    <li class="text-end">
+                                                        <p>3 425</p>
+                                                    </li>
+                                                    <li class="left-li">
+                                                        <img src="images/list-icon.png" alt="">
+                                                        <p>
+                                                            <span>Players Online (24h)</span>
+                                                        </p>
+                                                    </li>
+                                                    <li class="text-end">
+                                                        <p>3 120</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="show-all-btn text-center">
+                                            <a href="#">
+                                                <img src="images/Show-all-Btn.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="server-info-card server-ranking-card wow fadeInRight">
+                                    <div class="title-img">
+                                        <img src="images/left-side-title-card-icon.png" alt="">
+                                        <p>NEW EVENTS</p>
+                                    </div>
+                                    <div id="ranking-info-card" class="statistics-full-card">
+                                        <div class="info-desc-card">
+                                            <div class="info-header-card ranking-header-card">
+                                                <div class="info-header-title">
+                                                    <div class="info-header-left-card">
+                                                        <img src="images/menu-before.png" alt="">
+                                                        <p>SERVER EVENTS</p>
+                                                    </div>
+                                                    <div class="info-header-right-card">
+                                                        <a href="#">see more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="info-list-card statistics-card">
+                                                <ul class="events-list ">
+                                                    <div class="new-event-single-row">
+                                                        <li>
+                                                            <p>
+                                                                <span>Statistics of</span> Server Name
+                                                            </p>
+                                                        </li>
+                                                        <li class="text-end">
+                                                            <p>
+                                                                <span>Last updates:</span> 23/04/24 15:30
+                                                            </p>
+                                                        </li>
+                                                    </div>
+                                                    <div class="new-event-single-row">
+                                                        <li class="left-li">
+                                                            <img src="images/list-icon.png" alt="">
+                                                            <p>
+                                                                <span>Box of Heaven</span>
+                                                            </p>
+                                                        </li>
+                                                        <li class="text-end">
+                                                            <p>[23/01/24 I 15:31]</p>
+                                                        </li>
+                                                    </div>
+                                                    <div class="new-event-single-row">
+                                                        <li class="left-li">
+                                                            <img src="images/list-icon.png" alt="">
+                                                            <p>
+                                                                <span>White Wizard Attack</span>
+                                                            </p>
+                                                        </li>
+                                                        <li class="text-end">
+                                                            <p>[23/01/24 I 15:31]</p>
+                                                        </li>
+                                                    </div>
+                                                    <div class="new-event-single-row">
+                                                        <li class="left-li">
+                                                            <img src="images/list-icon.png" alt="">
+                                                            <p>
+                                                                <span>Red Dragon Invasion</span>
+                                                            </p>
+                                                        </li>
+                                                        <li class="text-end">
+                                                            <p>[23/01/24 I 15:31]</p>
+                                                        </li>
+                                                    </div>
+                                                    <div class="new-event-single-row">
+                                                        <li class="left-li">
+                                                            <img src="images/list-icon.png" alt="">
+                                                            <p>
+                                                                <span>Box of Luck</span>
+                                                            </p>
+                                                        </li>
+                                                        <li class="text-end">
+                                                            <p>[23/01/24 I 15:31]</p>
+                                                        </li>
+                                                    </div>
+                                                    <div class="new-event-single-row">
+                                                        <li class="left-li">
+                                                            <img src="images/list-icon.png" alt="">
+                                                            <p>
+                                                                <span>White Wizard Attack</span>
+                                                            </p>
+                                                        </li>
+                                                        <li class="text-end">
+                                                            <p>[23/01/24 I 15:31]</p>
+                                                        </li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="show-all-btn text-center">
+                                            <a href="#">
+                                                <img src="images/Show-all-Btn.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- STATISTICS AND EVENT AREA END -->
+
+            <!-- SERVER MEDIA AREA START -->
+            <section class="server-media-area">
+                <div class="container">
+                    <div class="server-media-wrpper">
+                        <div class="server-media-title">
+                            <img class="wow fadeInUp" src="images/server-media.png" alt="">
+                        </div>
+                        <div class="server-media-slider">
+                            <div id="server-media-slider" class="owl-carousel owl-theme">
+                                <div class="slide-item">
+                                    <a href="#">
+                                        <img src="images/server-media-1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="slide-item">
+                                    <a href="#">
+                                        <img src="images/server-media-2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="slide-item">
+                                    <a href="#">
+                                        <img src="images/server-media-3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="slide-item">
+                                    <a href="#">
+                                        <img src="images/server-media-1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="slide-item">
+                                    <a href="#">
+                                        <img src="images/server-media-2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="slide-item">
+                                    <a href="#">
+                                        <img src="images/server-media-3.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SERVER MEDIA AREA END -->
+
+            <!-- FOOTER MENU AREA START -->
+            <section class="footer-menu-area">
+                <div class="container">
+                    <div class="footer-menu-wrpper">
+                        <ul class="footer-menu-list SMN_effect-14 wow fadeInUp">
+                            <li class="footer-menu-item">
+                                <a href="#">HOMEPAGE</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#">RANKINGS</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#">ITEMSHOP</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#">COMMUNITY</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#">SUPPORT</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#">PRESENTATON</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#">VOTE4US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- FOOTER MENU AREA END -->
+        </main>
+        <!-- MAIN AREA END -->
+
+        <!-- FOOTER COPY RIGHT TEXT -->
+        <footer class="footer-copy-right">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-left-card">
+                            <p class="text-center text-md-start wow fadeInLeft">
+                                <span id="fullYear"></span>
+                                <a href="#">Metin2.com</a> - Fantasy Game Webdesign <span>All rights reserved.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-right-card">
+                            <p class="text-center text-md-end wow fadeInRight">Design & Animation <span>by</span>
+                                <a href="#">
+                                    <img src="images/footer-right-card-img.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Copy Right Year Handler -->
+        <script>
+            const findYear = new Date();
+            const fullYear = findYear.getFullYear();
+            document.getElementById('fullYear').innerText = "@" + fullYear;
+        </script>
+
+        <!-- Main jQuery -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+
+        <!-- Bootstrap.bundle Script -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <!-- Animation JS -->
+        <script src="js/wow.min.js"></script>
+
+        <!-- Owl Carousel JS -->
+        <script src="js/owl.carousel.min.js"></script>
+
+        <!-- Custom Query -->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
