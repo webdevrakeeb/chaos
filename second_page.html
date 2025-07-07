@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- Meta setup -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="">
+        <meta name="decription" content="">
+
+        <!-- Title -->
+        <title>Title Here</title>
+
+        <!-- Fav Icon -->
+        <link rel="icon" href="images/favicon.ico">
+
+        <!-- Include Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <!-- link font awesome -->
+        <link rel="stylesheet" href="css/font-awesome.css">
+
+        <!-- Animation CSS -->
+        <link rel="stylesheet" href="css/animate.css">
+
+        <!-- Main StyleSheet -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        <!-- HEADER AREA START -->
+        <header class="header-area">
+            <div class="container">
+                <div class="row align-items-center justify-content-md-between">
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="logo-card">
+                            <a href="index.html">
+                                <img src="images/chaos.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-12 col-lg-8 order-md-3 order-lg-2">
+                        <!-- LARGE SCREEN MENU -->
+                        <div class="header-menu-card d-none d-md-flex">
+                            <ul class="header-menu-list">
+                                <li id="header-menu-active">
+                                    <a href="#">home</a>
+                                </li>
+                                <li>
+                                    <img src="images/menu-before.png" alt="">
+                                    <a href="#">forum</a>
+                                </li>
+                                <li>
+                                    <img src="images/menu-before.png" alt="">
+                                    <a href="#">comunity</a>
+                                </li>
+                                <li>
+                                    <img src="images/menu-before.png" alt="">
+                                    <a href="#">support</a>
+                                </li>
+                                <li>
+                                    <img src="images/menu-before.png" alt="">
+                                    <a href="#">raport</a>
+                                </li>
+                            </ul>
+                            <select class="select-options">
+                                <option value="Polish">Polish</option>
+                                <option value="Turkish">Turkish</option>
+                                <option value="English">English</option>
+                            </select>
+                        </div>
+                        <!-- SMALL SCREEN MENU TOGGLER ICON -->
+                        <div id="humbarger-icon" class="d-md-none" data-bs-toggle="offcanvas" data-bs-target="#mobile__menu" aria-controls="offcanvasRight">
+                            <span class="humbarger-line"></span>
+                            <span class="humbarger-line"></span>
+                            <span class="humbarger-line"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2 order-md-2 order-lg-3 d-none d-md-block">
+                        <div class="login-card">
+                            <button data-bs-toggle="modal" data-bs-target="#login__register__popup">
+                                <img src="images/login-btn-bg.png" alt="">
+                                <span>log in</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER AREA END -->
+
+        <!-- LOGIN REGISTER POPUP START -->
+        <div class="modal fade" id="login__register__popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content popup-card">
+                    <div class="popup-title-card">
+                        <img src="images/left-side-title-card-icon.png" alt="">
+                        <p>USER PANEL LOGIN</p>
+                    </div>
+                    <div class="popup-cnt-card">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                <img src="images/menu-before.png" alt="">
+                                <span id="change__text">REGISTER</span>
+                            </h5>
+                            <div class="modal-header-menu">
+                                <div class="tab-container" data-group="group5">
+                                    <div class="tabs">
+                                        <div id="sec__register" class="tab active" onclick="openTab(event, 'tab31', 'group5')">REGISTER</div>
+                                        <div id="sec__login" class="tab" onclick="openTab(event, 'tab32', 'group5')">LOGIN</div>
+                                        <div id="sec__forget" class="tab" onclick="openTab(event, 'tab33', 'group5')">FORGOT?</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body">
+                            <!-- REGISTER FORM -->
+                            <div id="tab31" class="tab-content active" data-group="group5">
+                                <div class="register-form">
+                                    <form id="register-form" action="#" method="POST">
+                                        <!-- Single Row -->
+                                        <div class="single-input-row">
+                                            <label for="">
+                                                <span>01</span> ENTER YOUR USERNAME: </label>
+                                            <div class="input-filed">
+                                                <div class="input-icon-card">
+                                                    <i class="fa-solid fa-user"></i>
+                                                </div>
+                                                <div class="input-tag-card">
+                                                    <input type="text" name="username" id="username" placeholder="Username...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Row -->
+                                        <div class="single-input-row">
+                                            <label for="">
+                                                <span>02</span> ENTER PASSWORD: </label>
+                                            <div class="input-filed">
+                                                <div class="input-icon-card">
+                                                    <i class="fa-solid fa-lock"></i>
+                                                </div>
+                                                <div class="input-tag-card">
+                                                    <input type="password" name="password" id="password" placeholder="Password...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Row -->
+                                        <div class="single-input-row">
+                                            <label for="">
+                                                <span>03</span> ENTER YOUR MAIL: </label>
+                                            <div class="input-filed">
+                                                <div class="input-icon-card">
+                                                    <i class="fa-solid fa-envelope"></i>
+                                                </div>
+                                                <div class="input-tag-card">
+                                                    <input type="email" name="email" id="email" placeholder="Email address...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-bottom-card">
+                                            <div class="confirm-box">
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <p>By creating an account you accept our <a href="#">Terms od Services</a> and <a href="#">Privacy Policy.</a>
+                                                    </p>
+                                                </label>
+                                            </div>
+                                            <div class="register-btn-wrpper">
+                                                <button type="submit" data-bs-dismiss="modal">
+                                                    <img src="images/register-now-btn.png" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="warning-card">
+                                                <li>
+                                                    <img src="images/warning-card-icon.png" alt="">
+                                                    <a href="#">Do you forget password?</a>
+                                                </li>
+                                                <li>
+                                                    <img src="images/warning-card-icon.png" alt="">
+                                                    <span>Already have an account? <a href="#">Log in.</a>
+                                                    </span>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- LogIN Form -->
+                            <div id="tab32" class="tab-content" data-group="group5">
+                                <div class="login-form">
+                                    <form id="register-form" action="#" method="POST">
+                                        <!-- Single Row -->
+                                        <div class="single-input-row">
+                                            <label for="">
+                                                <span>01</span> ENTER YOUR USERNAME: </label>
+                                            <div class="input-filed">
+                                                <div class="input-icon-card">
+                                                    <i class="fa-solid fa-user"></i>
+                                                </div>
+                                                <div class="input-tag-card">
+                                                    <input type="text" name="username" id="username" placeholder="Username...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Row -->
+                                        <div class="single-input-row">
+                                            <label for="">
+                                                <span>02</span> ENTER PASSWORD: </label>
+                                            <div class="input-filed">
+                                                <div class="input-icon-card">
+                                                    <i class="fa-solid fa-lock"></i>
+                                                </div>
+                                                <div class="input-tag-card">
+                                                    <input type="password" name="password" id="password" placeholder="Password...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-bottom-card">
+                                            <div class="confirm-box">
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <p>Remember my details</p>
+                                                </label>
+                                            </div>
+                                            <div class="register-btn-wrpper">
+                                                <button type="submit" data-bs-dismiss="modal">
+                                                    <img src="images/popup-login-btn.png" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="warning-card">
+                                                <li>
+                                                    <img src="images/warning-card-icon.png" alt="">
+                                                    <a href="#">Do you forget password?</a>
+                                                </li>
+                                                <li>
+                                                    <img src="images/warning-card-icon.png" alt="">
+                                                    <span>Already have an account? <a href="#">Log in.</a>
+                                                    </span>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Forget Password -->
+                            <div id="tab33" class="tab-content" data-group="group5">
+                                <div class="forget-password-form">
+                                    <form id="register-form" action="#" method="POST">
+                                        <!-- Single Row -->
+                                        <div class="single-input-row">
+                                            <label for="">
+                                                <span>01</span> ENTER YOUR USERNAME: </label>
+                                            <div class="input-filed">
+                                                <div class="input-icon-card">
+                                                    <i class="fa-solid fa-user"></i>
+                                                </div>
+                                                <div class="input-tag-card">
+                                                    <input type="text" name="username" id="username" placeholder="Username...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-bottom-card">
+                                            <div class="register-btn-wrpper">
+                                                <button type="submit" data-bs-dismiss="modal">
+                                                    <img src="images/popup-login-btn.png" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="warning-card">
+                                                <li>
+                                                    <img src="images/warning-card-icon.png" alt="">
+                                                    <a href="#">Do you forget password?</a>
+                                                </li>
+                                                <li>
+                                                    <img src="images/warning-card-icon.png" alt="">
+                                                    <span>Already have an account? <a href="#">Log in.</a>
+                                                    </span>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LOGIN REGISTER POPUP END -->
+
+        <!-- MOBILE MENU START -->
+        <aside class="offcanvas offcanvas-end" tabindex="-1" id="mobile__menu" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <div id="offcanvasRightLabel">
+                    <a href="index.html">
+                        <img src="images/chaos.png" alt="">
+                    </a>
+                </div>
+                <div class="close-icon" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="images/close-icon.png" alt="">
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="side-menu-card">
+                    <ul class="side-menu-list">
+                        <li>
+                            <img src="images/menu-before.png" alt="">
+                            <a href="#">home</a>
+                        </li>
+                        <li>
+                            <img src="images/menu-before.png" alt="">
+                            <a href="#">forum</a>
+                        </li>
+                        <li>
+                            <img src="images/menu-before.png" alt="">
+                            <a href="#">comunity</a>
+                        </li>
+                        <li>
+                            <img src="images/menu-before.png" alt="">
+                            <a href="#">support</a>
+                        </li>
+                        <li>
+                            <img src="images/menu-before.png" alt="">
+                            <a href="#">raport</a>
+                        </li>
+                    </ul>
+                    <div class="login-card">
+                        <button data-bs-toggle="modal" data-bs-target="#login__register__popup">
+                            <img src="images/login-btn-bg.png" alt="">
+                            <span>log in</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- MOBILE MENU END -->
+
+        <!-- MAIN AREA START -->
+        <main id="second-page-main-body">
+
+            <!-- PAGE BRADCOME -->
+            <section class="bradcome-area">
+                <div class="container">
+                    <div class="bradcome-wrpper text-center wow fadeInUp">
+                        <span >DOWNLOAD</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PAGE MAIN CONTENT START -->
+            <section class="page-main-cnt">
+                <div class="container">
+                    <div class="page-main-cnt-wrpper">
+                        <div class="section-title-card">
+                            <img src="images/left-side-title-card-icon.png" alt="">
+                            <p>SERVER FILES DOWNLOAD  /  SYSTEM INFORMATIONS  / DRIVERS  &  QUESTIONS</p>
+                        </div>
+                        <div class="section-cnt-card">
+                            <!-- Area Header -->
+                            <div class="all-sections-header-card">
+                                <div class="left-section-title-card">
+                                    <img src="images/menu-before.png" alt="">
+                                    <p>DOWNLOAD FILES / <span>UPDATES</span>
+                                    </p>
+                                </div>
+                                <div class="left-section-tab-card">
+                                    <div class="tab-container" data-group="group4">
+                                        <div class="tabs second-page-tab">
+                                            <div class="tab active" onclick="openTab(event, 'tab21', 'group4')">files</div>
+                                            <div class="tab" onclick="openTab(event, 'tab22', 'group4')">PACKAGES</div>
+                                            <div class="tab" onclick="openTab(event, 'tab23', 'group4')">UPDATES</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Area Body -->
+                            <div class="all-section-cnt-card">
+                                <!-- FILES TAB CONTENT -->
+                                <div id="tab21" class="tab-content active" data-group="group4">
+                                    <!-- FILE SIZE ROW -->
+                                    <div class="file-size-row">
+                                        <p class="wow fadeInLeft">
+                                            <img src="images/list-icon.png" alt=""> File size: <span>1,5 GB</span>
+                                        </p>
+                                        <div class="row">
+                                            <!-- Single Platform -->
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="platform-card">
+                                                    <img class="wow fadeInUp" src="images/google-drive.png" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- Single Platform -->
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="platform-card">
+                                                    <img class="wow fadeInUp" src="images/interner-download.png" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- Single Platform -->
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="platform-card">
+                                                    <img class="wow fadeInUp" src="images/steam.png" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- Single Platform -->
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="platform-card">
+                                                    <img class="wow fadeInUp" src="images/media-fire.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- UPDATE PACKAGE ROW -->
+                                    <div class="update-package-row">
+                                        <div class="row-title-card wow fadeInUp">
+                                            <span> UPDATE PACKAGE</span>
+                                        </div>
+                                        <div class="update-post-row">
+                                            <div class="row">
+                                                <div class="col-md-6 col-lg-3">
+                                                    <div class="single-post-card wow fadeInUp">
+                                                        <p>
+                                                            <b>01</b> UPDATE <span>CLIENT</span>
+                                                        </p>
+                                                        <img src="images/update-client.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-3">
+                                                    <div class="single-post-card wow fadeInUp">
+                                                        <p>
+                                                            <b>02</b> UPDATE <span>CLIENT 400MB</span>
+                                                        </p>
+                                                        <img src="images/update-client-3.5gb.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-lg-6">
+                                                    <div class="single-post-card wow fadeInUp">
+                                                        <p style="color: transparent;" class="d-none d-lg-block"> . </p>
+                                                        <div class="update-package-card">
+                                                            <div class="cnt-card">
+                                                                <h4>[UPDATE PACKAGE]</h4>
+                                                                <span>If you have issues with the previous version of the launcher, extract this patch into the game folder to fix them.</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- REQUERIMENT ROW -->
+                                    <div class="requeiment-row">
+                                        <div class="row-title-card wow fadeInUp">
+                                            <span>REQUERIEMENTS</span>
+                                        </div>
+                                        <div class="requeiment-cnt-row">
+                                            <p class="wow fadeInLeft">
+                                                <img src="images/list-icon.png" alt=""> SYSTEM REQUERIEMENTS
+                                            </p>
+                                            <div class="requeiment-table wow fadeInUp">
+                                                <div class="table-responsive">
+                                                    <table>
+                                                        <tr>
+                                                            <th>Components</th>
+                                                            <th>Minimum</th>
+                                                            <th>Recommended</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Processor</td>
+                                                            <td>2.65 GHz</td>
+                                                            <td>3.65 GHz</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Connection</td>
+                                                            <td>1 Mbps</td>
+                                                            <td>3 Mbps</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Operational System</td>
+                                                            <td>Windows 10</td>
+                                                            <td>Windows 11</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Memory</td>
+                                                            <td>2 Gb </td>
+                                                            <td>4 Gb </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- DRIVER ROW -->
+                                    <div class="driver-row">
+                                        <div class="row-title-card wow fadeInUp">
+                                            <span>DRIVERS</span>
+                                        </div>
+                                        <div class="requeiment-cnt-row">
+                                            <p class="wow fadeInLeft">
+                                                <img src="images/list-icon.png" alt=""> TYPES OF DRIVERS
+                                            </p>
+                                        </div>
+                                        <div class="row drivers-row">
+                                            <!-- Single Driver -->
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="single-driver-card">
+                                                    <img class="wow fadeInUp" src="images/driver-1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- Single Driver -->
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="single-driver-card">
+                                                    <img class="wow fadeInUp" src="images/driver-2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- Single Driver -->
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="single-driver-card">
+                                                    <img class="wow fadeInUp" src="images/driver-3.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- FAQ ROW -->
+                                    <div class="faq-area">
+                                        <div class="row-title-card wow fadeInUp">
+                                            <span>QUESTIONS</span>
+                                        </div>
+                                        <div class="requeiment-cnt-row">
+                                            <p class="wow fadeInLeft">
+                                                <img src="images/list-icon.png" alt=""> FREQUENTLY ASKED QUESTIONS
+                                            </p>
+                                        </div>
+                                        <div class="accordion" id="accordionExample">
+                                            <!-- Accordion Item -->
+                                            <div class="accordion-item wow fadeInUp">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <p>
+                                                            <span>01 </span> WHY IT DOESN’T WORK?
+                                                        </p>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Adipiscing elit, sed do eiusmod tempor incididunt Risus commodo viverra.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item wow fadeInUp">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <p>
+                                                            <span>02 </span> WHY IT DOESN’T WORK?
+                                                        </p>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Adipiscing elit, sed do eiusmod tempor incididunt Risus commodo viverra.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item wow fadeInUp">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        <p>
+                                                            <span>03 </span> WHY IT DOESN’T WORK?
+                                                        </p>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Adipiscing elit, sed do eiusmod tempor incididunt Risus commodo viverra.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- PACKAGES TAB CONTENT -->
+                                <div id="tab22" class="tab-content" data-group="group4">
+                                    <h2 class="text-white pt-5">PACKAGES TAB CONTENT GOES HERE</h2>
+                                </div>
+                                <!-- UPDATES TAB CONTENT -->
+                                <div id="tab23" class="tab-content" data-group="group4">
+                                    <h2 class="text-white pt-5">UPDATES TAB CONTENT GOES HERE</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- PAGE MAIN CONTENT END -->
+
+            <!-- FOOTER MENU AREA START -->
+            <section class="footer-menu-area second-page-fma">
+                <div class="container">
+                    <div class="footer-menu-wrpper">
+                        <ul class="footer-menu-list SMN_effect-14 wow fadeInUp">
+                            <li class="footer-menu-item">
+                                <a href="#">HOMEPAGE</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#">RANKINGS</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#">ITEMSHOP</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#">COMMUNITY</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#">SUPPORT</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#">PRESENTATON</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#">VOTE4US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- FOOTER MENU AREA END -->
+
+        </main>
+        <!-- MAIN AREA END -->
+
+        <!-- FOOTER COPY RIGHT TEXT -->
+        <footer class="footer-copy-right">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-left-card">
+                            <p class="text-center text-md-start wow fadeInLeft">
+                                <span id="fullYear"></span>
+                                <a href="#">Metin2.com</a> - Fantasy Game Webdesign <span>All rights reserved.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-right-card">
+                            <p class="text-center text-md-end wow fadeInRight">Design & Animation <span>by</span>
+                                <a href="#">
+                                    <img src="images/footer-right-card-img.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+		<!-- LOGIN POPUP HANDLER -->
+        <script>
+            let secondPageRegister = document.getElementById('sec__register');
+            let secondPageLogin = document.getElementById('sec__login');
+            let secondPageForget = document.getElementById('sec__forget');
+            let changingText = document.getElementById('change__text');
+            secondPageRegister.addEventListener('click', function() {
+                changingText.innerText = "REGISTER"
+            })
+            secondPageLogin.addEventListener('click', function() {
+                changingText.innerText = "LOGIN"
+            })
+            secondPageForget.addEventListener('click', function() {
+                changingText.innerText = "FORGET"
+            })
+        </script>
+
+        <!-- Copy Right Year Handler -->
+        <script>
+            const findYear = new Date();
+            const fullYear = findYear.getFullYear();
+            document.getElementById('fullYear').innerText = "@" + fullYear;
+        </script>
+
+        <!-- Main jQuery -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+
+        <!-- Bootstrap.bundle Script -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <!-- Animation JS -->
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+
+        <!-- Custom Query -->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
